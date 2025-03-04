@@ -3,12 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind css</title>
+  <title>myweb</title>
   <link rel="stylesheet" href="src/output.css">
+  <link rel="icon" type="assets/icon" href="assets/navbrand.jpg">
 </head>
-<body>
-  <h1 class="text-red-600">
-    I have installed tailwindcss through 
-  </h1>
+<body class="scroll-smooth">
+  <nav class="flex justify-between px-10 py-1 mx-14 items-center fixed left-0 right-0 top-15% bg-white">
+    <div class=" flex  items-center flex-shrink-0">
+      <img src="assets/navbrand.jpg" alt="" class="h-10 ">
+      <a href="#home">
+        <h1 class="text-lg ">raghu numb</h1>
+      </a>
+    </div>
+    <div class="flex-shrink-0">
+      <ul class="flex space-x-10  ">
+        <li><a href="#home" class="hover:underline  decoration-green-700 cursor-pointer" >Home</a></li>
+        <li><a href="#about" class="hover:underline decoration-green-700 cursor-pointer">About</a></li>
+        <li><a href="#services" class="hover:underline decoration-green-700 cursor-pointer">Services</a></li>
+        <li><a href="#contact" class="hover:underline decoration-green-700 cursor-pointer">Contact</a></li>
+        <li><a href="#learn" class="hover:underline decoration-green-700 cursor-pointer">Learn</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--Nav bar-->
+<!--Home page -->
+<main class="mx-24 py-24 mb-24" id="home">
+  <div class="px-2 h-80 ">
+    <h1 class=" mb-5 font-bold text-3xl">
+      Front End Web Developer 
+    </h1>
+  <div>
+      <p class="flex items-center  ">Hey, I'm Raghu<img class=" ml-2 h-10 "  src="/public/assets/hand-wave.png" alt=""></p>
+    </div>
+    <p class="mb-12">I want to become a Freelancer in Web Developement</p>
+    <a href="#services" class="mt-24">
+      <button class="px-6 bg-green-700 py-3 rounded-md text-white">
+        Get Started
+      </button>
+    </a>
+  </div>
+</div>
+</main>
+  <!--About Page -->
+  <main class="mx-24 py-24 mb-24" id="about">
+    <div class="px-2 h-80 flex   items-center">
+    <div class="mr-11 flex-1">
+      <h1 class=" mb-5 font-bold text-3xl">
+        About Me
+       </h1>
+       <p>
+         Hello! I am Raghu,And I am a professional Web Developer. I have been learning coding for 3 months, I would like to open my own Freelancing.
+       </p>
+    </div>
+    <div class="flex-1">
+    <img src="assets/WhatsApp Image 2024-12-08 at 10.00.05.jpeg" alt="about-img" class=" object-cover rounded-xl h-64 w-964">
+    </div>
+  </div>
+  </main>
+<!--Services Page-->
+<main class="mx-24 py-24 mb-24"  id="services">
+  <div class="px-2 h-80 ">
+    <h1 class=" mb-5 font-bold text-3xl">
+     Services
+    </h1>
+    <p class="mb-10">
+      As you all know that i am Raghu here <br>
+      I can build Website for you. Drope me email below if you want
+    </p>
+    <a href="" class="text-green-700 mb-10  flex items-center ">
+      <img src="assets/gmail-icon.svg" alt="email-picture" class=" object-coverh-6 w-10 pr-3">
+      Email me
+    </a>
+    <a href="" class="text-green-700 mt-10 flex items-center">
+      <img src="assets/github-logo.png" alt="github-picture" class=" object-cover h-8 w-10 pr-3">
+      GitHub
+    </a>
+</div>
+</main>
+<!--Contact Page-->
+<main class="mx-24 py-24 mb-32 " id="contact">
+  <div class="px-2 h-80 ">
+    <h1 class=" mb-5 font-bold text-3xl">
+     Contact
+    </h1>
+    <p>
+      I'd love to hear from you!
+    </p>
+    <p class="mb-10">
+      Here's how to contact me and stay up to date
+    </p>
+    <a href="" class="text-green-700 mb-10  flex items-center ">
+      <img src="assets/gmail-icon.svg" alt="email-picture" class=" object-coverh-6 w-10 pr-3">
+      Email me
+    </a>
+</div>
+</main>
+<!--Learn Page-->
+<main class="mx-24 py-24" id="learn">
+  <div class="px-2 h-80 flex ">
+   <div class="mb-5 ">
+    <h1 class=" mb-5 font-bold text-3xl">
+      Learn From
+     </h1>
+     <p>
+       I have learned HTML,CSS AND JS from beside videos
+     </p>
+   </div>
+    <div class="flex ml-8">
+      <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">
+        <img src="assets/video-preview.png" alt="video-tumbnail" class="rounded-r-xl h-60 w-90 object-cover">
+      </a>
+      <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">
+        <img  src="assets/video-preview-2.png" alt="video-tumbnail" class="rounded-2xl h-60 w-90 object-cover">
+      </a>
+    </div>
+</div>
+</main>
 </body>
 </html>
