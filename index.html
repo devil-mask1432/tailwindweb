@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="src/output.css">
   <link rel="icon" type="assets/icon" href="assets/navbrand.jpg">
 </head>
-<body class="scroll-smooth">
-  <nav class="flex justify-between px-10 py-1 mx-14 items-center fixed left-0 right-0 top-15% bg-white">
+<body class="scroll-smooth pt-24">
+  <nav class="flex justify-between pr-16 pl-16  items-center fixed left-0 right-0 top-0 h-20 bg-slate-500">
     <div class=" flex  items-center flex-shrink-0">
-      <img src="assets/navbrand.jpg" alt="" class="h-10 ">
+      <img src="assets/navbrand.jpg" alt="" class="h-12 ">
       <a href="#home">
-        <h1 class="text-lg ">raghu numb</h1>
+        <h1 class="text-lg ">raghu <span class="text-green-700">numb</span></h1>
       </a>
     </div>
-    <div class="flex-shrink-0">
+    <div class="flex-shrink-0 ">
       <ul class="flex space-x-10  ">
         <li><a href="#home" class="hover:underline  decoration-green-700 cursor-pointer" >Home</a></li>
         <li><a href="#about" class="hover:underline decoration-green-700 cursor-pointer">About</a></li>
@@ -26,43 +26,49 @@
     </div>
   </nav>
 <!--Nav bar-->
+
 <!--Home page -->
-<main class="mx-24 py-24 mb-24" id="home">
-  <div class="px-2 h-80 ">
-    <h1 class=" mb-5 font-bold text-3xl">
-      Front End Web Developer 
-    </h1>
-  <div>
-      <p class="flex items-center  ">Hey, I'm Raghu<img class=" ml-2 h-10 "  src="/public/assets/hand-wave.png" alt=""></p>
+<main class="mx-24  mb-24  shadow rounded-xl" id="home">
+  <div class=" flex  h-96">
+    <div>
+      <img src="assets/FEW.png" alt="" class="object-cover rounded-l-xl h-96 ">
     </div>
-    <p class="mb-12">I want to become a Freelancer in Web Developement</p>
+  <div class="p-4">
+    <h1 class=" mb-5 font-bold text-3xl ">
+      Welcome to My Wibsite
+    </h1>
+     <p class="flex items-center  ">Hey, I'm Raghu<img class=" ml-2 h-24 "  src="/public/assets/hand-wave.png" alt=""></p>
+    <p class="mb-12">I am a professional freelencer in Font End Web Developement</p>
     <a href="#services" class="mt-24">
       <button class="px-6 bg-green-700 py-3 rounded-md text-white">
         Get Started
       </button>
     </a>
   </div>
+ 
 </div>
 </main>
   <!--About Page -->
   <main class="mx-24 py-24 mb-24" id="about">
-    <div class="px-2 h-80 flex   items-center">
-    <div class="mr-11 flex-1">
-      <h1 class=" mb-5 font-bold text-3xl">
-        About Me
-       </h1>
-       <p>
-         Hello! I am Raghu,And I am a professional Web Developer. I have been learning coding for 3 months, I would like to open my own Freelancing.
+    <div class="h-96 shadow rounded-xl p-4">
+    <h1 class=" mb-5 font-bold text-3xl">
+      About Me
+     </h1>
+    <div class="px-2 h-80 flex ">
+      <div class="">
+        <img src="assets/WhatsApp Image 2024-12-08 at 10.00.05.jpeg" alt="about-img" class=" object-cover rounded-xl h-64 w-964">
+      </div>
+     <div class="mr-11 flex-1 p-4">
+       <p class="ml-10">
+         Hello! I am Raghu,And I am a professional Web Developer. <br>I have been learning coding for 3 months I would like to open my own Freelancing.
        </p>
-    </div>
-    <div class="flex-1">
-    <img src="assets/WhatsApp Image 2024-12-08 at 10.00.05.jpeg" alt="about-img" class=" object-cover rounded-xl h-64 w-964">
-    </div>
+     </div>
+  </div>
   </div>
   </main>
 <!--Services Page-->
-<main class="mx-24 py-24 mb-24"  id="services">
-  <div class="px-2 h-80 ">
+<main class="mx-24 py-24 mb-24 "  id="services">
+  <div class="h-96 shadow rounded-xl p-4">
     <h1 class=" mb-5 font-bold text-3xl">
      Services
     </h1>
@@ -81,8 +87,8 @@
 </div>
 </main>
 <!--Contact Page-->
-<main class="mx-24 py-24 mb-32 " id="contact">
-  <div class="px-2 h-80 ">
+<main class="mx-24 py-24 mb-24 pb-60 " id="contact">
+  <div class="  shadow rounded-xl p-4">
     <h1 class=" mb-5 font-bold text-3xl">
      Contact
     </h1>
@@ -99,25 +105,32 @@
 </div>
 </main>
 <!--Learn Page-->
-<main class="mx-24 py-24" id="learn">
-  <div class="px-2 h-80 flex ">
-   <div class="mb-5 ">
-    <h1 class=" mb-5 font-bold text-3xl">
+<main class="mx-24 py-24 mb-24 pb-96 " id="learn">
+  <div class="mb-5  shadow rounded-xl p-4">
+    <h1 class=" mb-5 font-bold text-3xl ">
       Learn From
      </h1>
-     <p>
-       I have learned HTML,CSS AND JS from beside videos
-     </p>
-   </div>
-    <div class="flex ml-8">
-      <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">
-        <img src="assets/video-preview.png" alt="video-tumbnail" class="rounded-r-xl h-60 w-90 object-cover">
-      </a>
-      <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">
-        <img  src="assets/video-preview-2.png" alt="video-tumbnail" class="rounded-2xl h-60 w-90 object-cover">
-      </a>
+     <div class="px-2">
+      <div class="flex mb-6">
+       <div>
+        <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ" class="mb-4">
+          <img src="assets/image.png" alt="video-tumbnail" class=" mr-5  h-40 w-90 rounded-xl object-cover">
+        </a> <br>
+        <br>
+        <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ" class="mt-6">
+          <img  src="assets/Screenshot 2025-03-18 123609.png" alt="video-tumbnail" class="rounded-xl  h-40 w-90 object-cover">
+        </a>
+       </div>
+      
+      <div>
+        <p>
+          I have learned HTML,CSS AND JS from above videos. Check out these video if you wanted to <br> learnt HTML,CSS AND JAVASCRIPT.
+           More info about vedios creator, His name is Simon and <br>he wanted to make TEC Career easy for everyone. His teaching method is totaly different
+        </p>
+      </div>
     </div>
+   </div>
 </div>
-</main>
+</main> 
 </body>
 </html>
