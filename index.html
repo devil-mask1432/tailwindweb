@@ -9,15 +9,15 @@
 </head>
 <body class="scroll-smooth">
   <header>
-  <nav class="flex justify-between pr-20 pl-20  items-center fixed left-0 right-0 top-0 h-20   z-50 bg-white">
+  <nav class="flex justify-between sm:pr-20 sm:pl-20  items-center fixed left-0 right-0 top-0 h-20   z-50 bg-white">
     <div class=" flex  items-center flex-shrink-0">
       <img src="assets/navbrand.jpg" alt="" class="h-12 ">
       <a href="#home">
         <h1 class="text-lg ">raghu <span class="text-green-700">numb</span></h1>
       </a>
     </div>
-    <div class="flex-shrink-0 ">
-      <ul class="flex space-x-10  ">
+    <div class=" flex-shrink-0 ">
+      <ul class="invisible sm:visible sm:flex space-x-10  ">
         <li><a href="#home" class="hover:underline  decoration-green-700 cursor-pointer" >Home</a></li>
         <li><a href="#about" class="hover:underline decoration-green-700 cursor-pointer">About</a></li>
         <li><a href="#services" class="hover:underline decoration-green-700 cursor-pointer">Services</a></li>
@@ -30,18 +30,18 @@
 <!--Nav bar-->
 
 <!--Home page -->
-<main class="mx-20 py-24 mb-24  " id="home">
-  <div class="mb-5  shadow rounded-xl ">
-    <div class=" flex">
+<main class="sm:mx-20 py-24 mb-24 " id="home">
+  <div class="max-auto max-w-full bg-white overflow-hidden shadow-md rounded-xl ">
+    <div class=" shrink-0 sm:flex">
       <div>
-        <img src="assets/FEW.png" alt="" class="object-cover rounded-l-xl h-96 ">
+        <img src="assets/FEW.png" alt="" class="object-cover   h-full w-full md:w-96 md:h-full md:rounded-l-xl">
       </div>
-    <div class="p-4 h-96">
+    <div class="p-4">
       <h1 class=" mb-5 font-bold text-3xl ">
         Welcome to My Wibsite
       </h1>
       <p>Hey, I'm Raghu</p>
-      <p class="mb-16">I am a professional freelencer in Font End Web Developement</p>
+      <p class="mb-14">I am a professional freelencer in Font End Web Developement</p>
       <a href="#services" class="">
         <button class="px-6 bg-green-700 py-3 rounded-md text-white">
           Get Started
@@ -55,14 +55,14 @@
    
 
   <!--About Page -->
-  <main class="mx-24 py-24 mb-24  " id="about">
-    <div class="shadow rounded-xl p-4">
+  <main class="sm:mx-24 py-24 mb-24  " id="about">
+    <div class="max-auto max-w-full bg-white overflow-hidde shadow rounded-xl p-4 ">
       <h1 class=" mb-5 font-bold text-3xl">
-      About Me
+       About Me
       </h1>
-    <div class="flex">
-      <div>
-        <img class="h-60 rounded-xl object-cover" src="assets/WhatsApp Image 2024-12-08 at 10.00.05.jpeg" alt="">
+    <div class="sm:flex">
+      <div class="">
+        <img class="h-48 w-full rounded-xl object-cover md:h-full md:w-48" src="assets/WhatsApp Image 2024-12-08 at 10.00.05.jpeg" alt="">
       </div>
       <div class="p-4">
         <p>
@@ -76,8 +76,8 @@
   </div>
   </main>
 <!--Services Page-->
-<main class="mx-24 py-24 mb-24 "  id="services">
-  <div class="h-96 shadow rounded-xl p-4">
+<main class="sm:mx-24 py-24 mb-24 "  id="services">
+  <div class=" max-auto max-w-full bg-white overflow-hidde shadow rounded-xl p-4">
     <h1 class=" mb-5 font-bold text-3xl">
      Services
     </h1>
@@ -96,8 +96,8 @@
 </div>
 </main>
 <!--Contact Page-->
-<main class="mx-24 py-24 mb-24 pb-60 " id="contact">
-  <div class="  shadow rounded-xl p-4">
+<main class="sm:mx-24 py-24 mb-24 pb-60 " id="contact">
+  <div class="max-auto max-w-full bg-white overflow-hidde  shadow rounded-xl p-4">
     <h1 class=" mb-5 font-bold text-3xl">
      Contact
     </h1>
@@ -114,25 +114,25 @@
 </div>
 </main>
 <!--Learn Page-->
-<main class="mx-24 py-24 mb-24 pb-96 " id="learn">
-  <div class="mb-5  shadow rounded-xl p-4">
+<main class="sm:mx-24 py-24 mb-24 pb-96 " id="learn">
+  <div class="mb-5 max-auto max-w-full bg-white overflow-hidde  shadow rounded-xl p-4">
     <h1 class=" mb-5 font-bold text-3xl ">
       Learn From
      </h1>
      <div >
       <div>
-       <div class="flex">
+       <div class="sm:flex">
         <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ" class="mb-4">
-          <img src="assets/image.png" alt="video-tumbnail" class="h-40 w-90 rounded-xl object-cover">
+          <img src="assets/image.png" alt="video-tumbnail" class=" h-48 w-full md:w-96 md:h-full rounded-xl object-cover">
         </a> 
         <p class="p-4">
           I have learned HTML,AND CSS from this video I hope you can also.
         </p>
        </div>
       
-      <div class="flex ">
+      <div class="sm:flex">
         <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ" >
-          <img  src="assets/Screenshot 2025-03-18 123609.png" alt="video-tumbnail" class="rounded-xl  h-40 w-90 object-cover">
+          <img  src="assets/Screenshot 2025-03-18 123609.png" alt="video-tumbnail" class="rounded-xl md:w-96 md:h-full  h-48 w-full object-cover">
         </a>
         <p class="p-4">
            JS from above videos. Check out these video if you wanted to <br> learnt HTML,CSS AND JAVASCRIPT.
