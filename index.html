@@ -8,15 +8,15 @@
   <link rel="icon" type="assets/icon" href="assets/Secondary Logo.png">
 </head>
 <body class="bg-black text-white">
-  <header class="">
-    <nav class="flex justify-between sm:pr-24 sm:pl-24  items-center fixed left-0 right-0 top-0 h-20 pl-4  z-50 bg-black">
-      <div class=" flex  items-center flex-shrink-0">
-        <img src="assets/Secondary Logo.png" alt="" class="h-10 border rounded-sm bg-black object-fill mr-3">
+  <!-- nav bar code starts here -->
+  <nav class="flex justify-between sm:pr-24 sm:pl-24  items-center fixed left-0 right-0 top-0 h-20 pl-4  z-50 bg-black">
+    <div class=" flex  items-center flex-shrink-0">
+      <img src="assets/Secondary Logo.png" alt="" class="h-10 border rounded-sm bg-black object-fill mr-3">
         <a href="#home">
           <h1 class="text-lg ">raghu <span class="text-green-700">numb</span></h1>
         </a>
-      </div>
-      <div class=" flex-shrink-0 ">
+    </div>
+    <div class=" flex-shrink-0 ">
         <ul class="  md:flex space-x-10 hidden ">
           <li><a href="#home" class="hover:underline  decoration-green-700 cursor-pointer">Home</a></li>
           <li><a href="#about" class="hover:underline decoration-green-700 cursor-pointer">About</a></li>
@@ -24,16 +24,48 @@
           <li><a href="#contact" class="hover:underline decoration-green-700 cursor-pointer">Contact</a></li>
           <li><a href="#learn" class="hover:underline decoration-green-700 cursor-pointer">Learn</a></li>
         </ul>
+    </div>
+    <div  class="md:hidden">
+      <button onclick="document.getElementById('pages').style.display = 'block'">
+        <img class="h-8 mr-6 rounded-md border " src="assets/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
+      </button>
+    </div>
+</nav>
+ <!--Nav bar code ends here-->
+   <!-- small nav bar card for smaller devices code begins here -->
+    <div class="hidden" id="pages" >
+      <div  class="fixed top-[80px]   right-16 flex justify-between  bg-black rounded-md border p-2 w-60 md:hidden" >
+       <ul class="space-y-2"> 
+          <li class="cursor-pointer flex space-x-1">
+            <img src="assets/home.png" alt="">
+            <a href="#home">Home</a>
+          </li>
+          <li class="cursor-pointer flex space-x-1">
+            <img src="assets/about.png" alt="">
+            <a href="#about">About</a>
+          </li>
+          <li class="cursor-pointer flex space-x-1">
+            <img src="assets/linked services.png" alt="">
+            <a href="#services">Services</a>
+          </li>
+          <li class="cursor-pointer flex space-x-1">
+            <img src="assets/contact.png" alt="">
+            <a href="#contact">Contact</a></li>
+          <li class="cursor-pointer flex space-x-1">
+            <img src="assets/learnig.png" alt="">
+            <a href="#learn">Learning</a>
+          </li>
+        </ul>
+        <div>
+          <button onclick="document.getElementById('pages').style.display='none'">
+            <img class="" src="assets/close.png" alt="">
+          </button>
+        </div>
       </div>
-     <div  class="md:hidden">
-      <img class="h-8 mr-6 rounded-md border " src="assets/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
-  </div>
-    </nav>
-  </header>
-  <!--Nav bar-->
-  
+    </div>
+   <!-- small nav bar card for smaller devices code ends here -->
   <!--Home page -->
-  <main class="sm:mx-24 py-24 mb-24 pr-4 pl-4" id="home">
+  <section class="sm:mx-24 py-24 mb-24 pr-4 pl-4" id="home">
     <div class="max-auto max-w-full bg-black text-white overflow-hidden shadow-md rounded-xl border ">
       <div class=" sm:flex ">
         <div class="flex-1">
@@ -44,7 +76,7 @@
           Welcome to My Website
         </h1>
         <p>Hey, I'm Raghu</p>
-        <p class="mb-14">I am a professional freelencer in Font End Web Developement</p>
+        <p class="mb-14">I am a professional freelencer in Front End Web Developement</p>
         <a href="#services" class="">
           <button class="px-6 bg-green-700 py-3 rounded-md text-white">
             Get Started
@@ -53,12 +85,11 @@
       </div>
     </div>
     </div>
-  </main> 
-   
-     
+  </section> 
+  
   
     <!--About Page -->
-    <main class="sm:mx-24 py-24 mb-24  " id="about">
+    <section class="sm:mx-24 py-24 mb-24  " id="about">
       <div class="max-auto max-w-full bg-black overflow-hidde shadow rounded-xl p-4 border ml-4 mr-4">
         <h1 class=" mb-5 font-bold text-3xl">
          About Me
@@ -76,29 +107,29 @@
         </div>
       </div>
     </div>
-    </main>
+    </section>
   <!--Services Page-->
-  <main class="sm:mx-24 py-24 mb-24 "  id="services">
-    <div class=" max-auto max-w-full bg-black overflow-hidde shadow rounded-xl p-4 border ml-4 mr-4">
+  <section class="sm:mx-24 py-24 mb-24 "  id="services">
+    <div class=" overflow-hidden max-auto max-w-full bg-black overflow-hidde shadow rounded-xl p-4 border ml-4 mr-4">
       <h1 class=" mb-5 font-bold text-3xl">
        Services
       </h1>
       <p class="mb-10">
-        As you all know that i am Raghu here <br>
-        I can build Website for you. Drope me email below if you want
+        As you all know that I am Raghu here <br>
+        I can build Website for you. Drop me email below if you want
       </p>
-      <a href="" class="text-green-700 mb-10  flex items-center ">
+      <a href="" class="text-green-700 mb-10  flex items-center hover:border rounded-md w-40 p-3">
         <img src="assets/gmail-icon.svg" alt="email-picture" class=" object-coverh-6 w-10 pr-3">
         Email me
       </a>
-      <a href="" class="text-green-700 mt-10 flex items-center">
-        <img src="assets/github-logo.png" alt="github-picture" class=" object-cover h-8 w-10 pr-3">
+      <a href="" class="text-green-700 mt-10  flex items-center hover:border rounded-md w-40 p-3">
+        <img src="assets/github-logo.png" alt="github-picture" class=" object-cover h-8 w-10 pr-3 rounded-md">
         GitHub
       </a>
   </div>
-  </main>
+  </section>
   <!--Contact Page-->
-  <main class="sm:mx-24 py-24 mb-24 pb-60 " id="contact">
+  <section class="sm:mx-24 py-24 mb-24 pb-60 " id="contact">
     <div class="max-auto max-w-full bg-black overflow-hidde  shadow rounded-xl p-4 border ml-4 mr-4">
       <h1 class=" mb-5 font-bold text-3xl">
        Contact
@@ -109,14 +140,14 @@
       <p class="mb-10">
         Here's how to contact me and stay up to date
       </p>
-      <a href="" class="text-green-700 mb-10  flex items-center ">
+      <a href="" class="text-green-700 mb-10  flex items-center hover:border w-40  p-3 rounded-md">
         <img src="assets/gmail-icon.svg" alt="email-picture" class=" object-coverh-6 w-10 pr-3">
         Email me
       </a>
   </div>
-  </main>
+  </section>
   <!--Learn Page-->
-  <main class="sm:mx-24 py-24 mb-24 pb-96 " id="learn">
+  <section class="sm:mx-24 py-24 mb-24 pb-96 " id="learn">
     <div class="mb-5 max-auto max-w-full bg-black overflow-hidde  shadow rounded-xl p-4 border ml-4 mr-4">
       <h1 class=" mb-5 font-bold text-3xl ">
         Learn From
@@ -137,6 +168,6 @@
         </div>
       </div>
   </div>
-  </main> 
+  </section> 
 </body>
 </html>
